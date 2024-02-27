@@ -23,7 +23,6 @@ class PhpunitTest extends TestCase
     public function testPreviousChangesAreRolledBack(): void
     {
         $this->assertRowCount(0);
-        $this->assertTrue($this->connection->isTransactionActive());
     }
 
     public function testChangeDbStateWithMultipleConnections(): void

@@ -15,6 +15,7 @@ doctrine:
                 dbname:   '%db_name%'
                 user:     '%db_user%'
                 password: '%db_password%'
+                use_savepoints: true
 
 dama_doctrine_test:
     enable_static_connection: true
